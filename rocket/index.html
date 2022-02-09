@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img src="mars.png" alt="planet mars" class="planet">
+            <img src="rocket.png" alt="rocket" class="rocket" id="twojstara">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <input type="password" id="password" placeholder="Enter password to unlock" required>
+                <input type="button" id="button" value="OK">
+                <div class="check-buttons">
+                    <input type="checkbox" disabled class="checkMax" onchange='checkChange()'>
+                    <input type="checkbox" disabled class="checkMax" onchange='checkChange()'>
+                    <input type="checkbox" disabled class="checkMax" onchange='checkChange()'>
+                    <input type="checkbox" disabled class="checkMax" onchange='checkChange()'>
+                    <input type="checkbox" disabled class="checkMax" onchange='checkChange()'>
+                    <input type="checkbox" disabled class="checkMax" onchange='checkChange()'>
+                </div>
+                <div class="levers">
+                    <input type="range" disabled id="range1" class="rangeMax" onchange='checkChange()' max="100"
+                        min="0">
+                    <input type="range" disabled id="range2" class="rangeMax" onchange='checkChange()' max="100"
+                        min="0">
+                    <input type="range" disabled id="range3" class="rangeMax" onchange='checkChange()' max="100"
+                        min="0">
+                    <input type="range" disabled id="range4" class="rangeMax" onchange='checkChange()' max="100"
+                        min="0">
+                    <input type="range" disabled id="range5" class="rangeMax" onchange='checkChange()' max="100"
+                        min="0">
+                </div>
+                <input type="button" value="Launch" id="launch" disabled onclick="rocketAnim()">
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
